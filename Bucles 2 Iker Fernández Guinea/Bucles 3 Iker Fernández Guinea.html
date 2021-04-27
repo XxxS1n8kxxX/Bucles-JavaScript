@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bucles 1 Iker Fernández Guinea.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <title>Bucles 2</title>
+</head>
+
+<body>
+    
+<h1>EJERCICIO BUCLES 2 - LOS MAS MOLONES</h1>    
+
+<ul id="lista">
+    <a href="Bucles 1 Iker Fernández Guinea.html"><button id="b">Bucles 1</button></a>
+    <a href="Bucles 2 Iker Fernández Guinea.html"><button id="b">Bucles 2</button></a>
+    <a href="Bucles 3 Iker Fernández Guinea.html"><button id="b">Bucles 3</button></a>
+    <a href="Bucles 4 Iker Fernández Guinea.html"><button id="b">Bucles 4</button></a>
+</ul>
+
+<h2 id="btext">Bucles 3</h2>
+
+<p>Se tiene que calcular el número de
+    cifras que tiene el número que
+    pongamos en el input.
+    Para saber las cifras debemos ir
+    dividiendo por 10 hasta que el
+    resultado sea cero.</p>
+        
+<FORM id="login">
+    <label id="hasta">Cifras del numero: </label>
+    <input type="text" id="n1"/>
+</FORM>
+
+<button id="b2">Empezar</button>
+<button id="b3">Limpiar</button>
+
+<br><br><br><br>
+
+<div id="salida">
+    <p id="res"></p>
+</div>
+
+</body>
+
+<script>
+
+$(document).ready(function(){
+
+
+$("#b2").click(function(){
+ 
+var x = parseInt(document.getElementById("n1").value);
+
+if(x <= 9){
+    $("#res").append("El numero: " + x + " tiene 1 cifra");  
+        
+}
+
+else if(x <= 99) {
+    $("#res").append("El numero: " + x + " tiene 2 cifras");
+
+}
+
+else if(x <= 999) {
+$("#res").append("El numero: " + x + " tiene 3 cifras");
+
+}
+
+else if(x <= 9999) {
+$("#res").append("El numero: " + x + " tiene 4 cifras");
+
+}
+
+else if(x <= 99999) {
+$("#res").append("El numero: " + x + " tiene 5 cifras");
+
+}
+
+else if(x <= 999999) {
+$("#res").append("El numero: " + x + " tiene 6 cifras");
+
+}
+
+else if(x <= 9999999) {
+$("#res").append("El numero: " + x + " tiene 7 cifras");
+
+}
+
+else if(x <= 99999999) {
+$("#res").append("El numero: " + x + " tiene 8 cifras");
+
+}
+
+else if(x <= 9999999999) {
+$("#res").append("El numero: " + x + " tiene 9 cifras");
+
+}
+
+else if(x <= 99999999999) {
+$("#res").append("El numero: " + x + " tiene 10 cifras");
+
+}
+else if(x <= 999999999999) {
+$("#res").append("El numero: " + x + " tiene 11 cifras");
+
+}
+
+else if(x <= 9999999999999) {
+$("#res").append("El numero: " + x + " tiene 12 cifras");
+
+}
+
+});  
+
+$('#b3').click(function(){
+    $('#res').text("");
+    
+});
+
+
+});
+
+
+</script>
+
+</html>

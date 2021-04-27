@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bucles 1 Iker Fernández Guinea.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <title>Bucles 2</title>
+</head>
+
+<body>
+    
+<h1>EJERCICIO BUCLES 2 - LOS MAS MOLONES</h1>    
+
+<ul id="lista">
+    <a href="Bucles 1 Iker Fernández Guinea.html"><button id="b">Bucles 1</button></a>
+    <a href="Bucles 2 Iker Fernández Guinea.html"><button id="b">Bucles 2</button></a>
+    <a href="Bucles 3 Iker Fernández Guinea.html"><button id="b">Bucles 3</button></a>
+    <a href="Bucles 4 Iker Fernández Guinea.html"><button id="b">Bucles 4</button></a>
+</ul>
+
+<h2 id="btext">Bucles 1 tablas de multiplicar del 1 al 10</h2>
+
+<p>Se muestran La tabla de multiplicar del número que
+    ponemos en el input. Del 1 al 10.Si no ponemos número, se da un error.</p>
+        
+<FORM id="login">
+    <label id="hasta">Tabla del: </label>
+    <input type="text" id="n1"/>
+</FORM>
+
+<button id="b2">Empezar</button>
+<button id="b3">Limpiar</button>
+
+<br><br><br><br>
+
+<div id="salida">
+    <p id="res"></p>
+</div>
+
+</body>
+
+<script>
+
+$(document).ready(function(){
+    
+$("#b2").click(function(){
+        
+var x = parseInt(document.getElementById("n1").value);
+var cont = 1;
+
+            
+    while ((cont <= 10) && (cont >= 1)){
+        var solucion = (x * cont)
+        $("#res").append(x + " x " + cont + " = " + solucion + "</br>");  
+        cont++
+            
+    };
+            
+});
+         
+    
+$('#b3').click(function(){
+    $('#res').text("");
+        
+});
+    
+    
+});
+
+
+</script>
+
+</html>
